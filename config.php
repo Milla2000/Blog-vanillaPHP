@@ -1,17 +1,16 @@
-<?php 
-	session_start();
+<?php
+session_start();
 
-	// connect to database
-    $conn = mysqli_connect("localhost", "root", "", "complete-blog-php");
+// connect to database
+$conn = mysqli_connect("localhost", "root", "", "complete-blog-php");
 
-	if (!$conn) {
-		die("Error connecting to database: " . mysqli_connect_error());
-	}
-       // coming soon...
+if (!$conn) {
+	die("Error connecting to database: " . mysqli_connect_error());
+}
+// coming soon...
 
 
-       
-     //global constants
-	define ('ROOT_PATH', realpath(dirname(__FILE__)));
-	define('BASE_URL', 'http://localhost/blog-php/');
-?>
+
+//global constants
+define('ROOT_PATH', realpath(dirname(__FILE__)));
+define('BASE_URL', 'http://localhost/blog-php/');
