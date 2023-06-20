@@ -10,6 +10,9 @@ function getPublishedPosts()
 	$sql = "SELECT * FROM posts WHERE published=true";
 	$result = mysqli_query($conn, $sql);
 	// fetch all posts as an associative array called $posts
+	//MYSQLI_ASSOC is a constant that tells the mysqli_fetch_all() function to return an associative
+	// array for each row. In an associative array, the column names are used as the keys, 
+	//and the corresponding values from each row are stored under those keys.
 	$posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 	$final_posts = array();
